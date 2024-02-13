@@ -1,0 +1,112 @@
+Buenas,
+
+Ejercicios realizados:  https://github.com/gabaelru/M2C3
+
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+
+
+Preguntas teóricas:
+
+1.- ¿Cuáles son los 4 tipos de datos en Python?
+
+	Númericos (integer, decimal, float...)
+	Cadenas de texto
+	Booleanos (true-false)
+	Colecciones de datos (listas, diccionarios, tuplas....)
+
+
+
+¿Qué tipo de convención de nomenclatura debemos usar para las variables en Python?
+
+	Las variables hay que declararlas en minúsculas y
+	el nombre de la variable sea descriptivo del contenido que va a tener.
+	
+	
+
+¿Qué es un heredoc de Python?
+
+	Es una cadena de texto multilinea, que guarda los saltos de línea.
+
+	Ejemplo:
+	heredoc_example = """
+	Esto es un bloque de texto
+	que contiene varias lineas.
+
+	Puedes tener varios párrafos y 
+	todo se guarda tal cual se ve
+	"""
+
+
+
+¿Qué es la interpolación de cadenas?
+
+	Es la manera de poder añadir valores dinamicamente a las cadenas de texto.
+
+	En Phyton exiten 3 maneras:
+
+	- Las f-string, que sería añadiendo "f" al inicio de la cadena de texto y dentro
+		se añaden las variables mediante corchetes "{nombre}":
+		
+		nombre = "Pepe"
+		edad = 40
+		cadena_texto = f"Mi nombre es {nombre} y tengo {edad} años"
+
+	- Usando el operador %s que se añade en la cadena de texto y al final
+		se añaden las variables correspondientes:
+
+		nombre = "Pepe"
+		edad = 40
+		cadena_texto = "Mi nombre es %s y tengo %s años" % (nombre, edad)
+
+	- Usando el método format, en la cadena de texto se añade mediante corchetes
+		donde se quieren añadir las variables y al final de la cadena con el 
+		metodo format se indican los nombres de las variables:
+
+		nombre = "Pepe"
+		edad = 40
+		cadena_texto = "Mi nombre es {} y tengo {} años".format(nombre, edad)
+
+
+
+¿Cuándo debemos usar comentarios en Python?
+
+	Los comentarios hay que usarlos en su justa medida, no hay que llenar el código de comentarios,
+	deberían de usarse para aclarar que realiza una parte de un código si es que no queda claro,
+	para que en un futuro cualquiera pueda entender el código escrito.
+	
+	Se podrían usar comentarios de una manera temporal para dejar funcionalidades pendientes
+	de realizar y que sean faciles de encontrar, se suelen usar con la cadena TODO inicialmente
+	y asi son una forma de encontrar en el codigo y darte cuenta de que falta algo por terminar.
+
+
+
+
+¿Cuáles son las diferencias entre las aplicaciones monolíticas y de microservicios?
+
+	Las aplicaciones monoliticas se desarrollan como si fuera un bloque donde
+	toda la funcionalidad se crea dentro de ese bloque, mientras que los microservicios
+	se desarrollan por bloques, donde cada bloque contiene su funcionalidad.
+	Inicialmente las monoliticas son más sencillas de desarrrollar, pero según
+	van avanzando en volumen se complica su mantenimiento y posteriores desarrollos,
+	en el caso de los microservicios el desarrollo incialmente puede ser más complejo,
+	pero a la larga el mantenimiento es más sencillo.
+
+	Para aplicaciones pequeñas, que se sepa que no van a crecer en un futuro, 
+	se usaria el modelo monolitico, siendo posible en caso necesario pasar a 
+	un modelo de microservicios.
+
+
+
+
+Un saludo.
+
+	
+
+
+
+
+
+
+
